@@ -1,5 +1,6 @@
 const express = require('express');
 const db = require('./app/models')
+require('dotenv').config()
 
 const app = express();
 
@@ -15,7 +16,6 @@ app.get('/', (req, res) => {
 
 require('./app/routes/tuser.routes')(app)
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${process.env.PORT}`);
 })
