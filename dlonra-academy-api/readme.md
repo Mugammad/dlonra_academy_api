@@ -1,6 +1,6 @@
 # super-blog-api
 
-An API that handles all user register and login as well as All CRUD for a blog
+An api that handles a POST for user (name, surname, email), as well as a GET request that get all the users in the database.  
 
 ## Tech Stack
 
@@ -12,13 +12,13 @@ Node, Express, mysql, sequelize
 Clone the project
 
 ```bash
-  git clone https://github.com/Mugammad/super-blog-fullstack.git
+  git clone https://github.com/Mugammad/dlonra_academy_api.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd super-blog-fullstack/super-blog-api
+  cd dlonra_academy_api/dlonra_academy_api
 ```
 
 Install dependencies
