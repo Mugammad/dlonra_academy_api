@@ -1,10 +1,12 @@
 const express = require('express');
 const db = require('./app/models')
+const cors = require('cors')
 require('dotenv').config()
 
 const app = express();
 
 app.use(express.json());
+app.use(cors())
 
 db.sequelize.sync({force: true}).then(() => {
     console.log('Drop and resync DB');
